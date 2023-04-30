@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1EEEE"
+    tools:context=".Dashboard">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/logout"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_logout_24"
+                android:translationX="240dp"
+                app:elevation="11dp"
+                app:fabSize="normal" />
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:translationY="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Battery Testing"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#673AB7"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/symbol"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="409dp"
+        android:translationY="140dp">
+
+        <TextView
+            android:id="@+id/voltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="105dp"
+            android:translationX="20dp"
+            android:text="Voltage:"
+            android:textColor="#F10C0C"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="105dp"
+            android:translationX="250dp"
+            android:text="Current:"
+            android:textColor="#F10C0C"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="280dp"
+            android:translationX="250dp"
+            android:text="Capacity:"
+            android:textColor="#F10C0C"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/staofchrg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="280dp"
+            android:translationX="20dp"
+            android:text="SOC(%):"
+            android:textColor="#F10C0C"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/v"
+            android:layout_width="101dp"
+            android:layout_height="99dp"
+            android:layout_marginEnd="121dp"
+            android:layout_toStartOf="@+id/a"
+            android:foregroundGravity="center"
+            app:cardBackgroundColor="#556EF3"
+            app:cardCornerRadius="100dp">
+
+            <TextView
+                android:id="@+id/volt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="V"
+                android:textColor="#EF7B24"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:translationX="30dp"
+                android:translationY="10dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/a"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:foregroundGravity="center"
+            app:cardBackgroundColor="#6200EA"
+            app:cardCornerRadius="100dp">
+
+            <TextView
+                android:id="@+id/amp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#0CE415"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:translationX="30dp"
+                android:translationY="10dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/SOC"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="122dp"
+            android:layout_marginBottom="40dp"
+            android:layout_toStartOf="@+id/Ah"
+            android:foregroundGravity="center"
+            app:cardBackgroundColor="#5B4D75"
+            app:cardCornerRadius="100dp">
+
+            <TextView
+                android:id="@+id/soc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SOC"
+                android:textColor="#0CE415"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:translationX="4dp"
+                android:translationY="15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Ah"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="40dp"
+            android:foregroundGravity="center"
+            app:cardBackgroundColor="#5B4D75"
+            app:cardCornerRadius="100dp">
+
+            <TextView
+                android:id="@+id/pow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ah"
+                android:textColor="#0CE415"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:translationX="17dp"
+                android:translationY="10dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:translationY="510dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/clock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="CLOCK"
+            android:textColor="#E6CF06"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+       android:translationY="550dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="31dp"
+            app:cardBackgroundColor="#273581"
+            >
+
+            <Button
+                android:id="@+id/starttest"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Start Test"
+                android:textSize="20sp"
+                android:translationX="80dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/stoptest"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:translationY="50dp"
+                android:translationX="80dp"
+                android:text="Stop Test"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/lidevice"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="link device"
+                android:translationY="100dp"
+                android:translationX="80dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+
+</RelativeLayout>

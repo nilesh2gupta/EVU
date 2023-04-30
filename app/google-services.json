@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "958556927229",
+    "project_id": "euvpro-5c781",
+    "storage_bucket": "euvpro-5c781.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958556927229:android:88e324dd3d8adfa4653a94",
+        "android_client_info": {
+          "package_name": "com.example.euv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958556927229-j8pvjkhbdegjnrej3p9gqvfuvppr1ib9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKw22giLlLwuj8t3qpYgnZ8HhMCZhJmlU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958556927229-j8pvjkhbdegjnrej3p9gqvfuvppr1ib9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
